@@ -1,0 +1,64 @@
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Дежурная смена ОРБ ЛАЭС-2</title>
+	<link rel="icon" href="img/service/favicon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="css/main.css">
+    <script src="scripts/header_clock.js"></script>
+</head>
+
+<body>
+
+<header>
+	<div class="container">
+        <div class="header">
+            <div class="header__icon"></div>
+            <div class="header__title">Блочный пункт</br>радиационного контроля</div>
+            <div class="header__date"><span id="date"></span></div>
+            <div class="header__time">
+                <span id="clock"></span>
+                <script>digitalClock();</script>
+            </div>
+        </div>
+	</div>
+</header>
+
+<div class="staff">
+	<div class="container">
+
+        <div class="staff__header">
+            <div class="staff__header__boss__title">Начальник смены</div>
+            <div class="staff__header__info"></div>
+        </div>
+
+        <div class="staff__box">
+            <div class="staff__box__boss">
+                <img class="staff__box__boss__img" src="img/Gvozdev_V_S.jpg" alt="Начальник смены">
+            </div>
+            <div class="staff__box__engineer">
+                <img class="staff__box__engineer__img" src="img/Suharev_M_A.jpg" alt="Инженер сменный">
+                <div class="staff__box__engineer__title">Инженер (сменный)<p><span>Сухарев</span></br>Михаил</br>Александрович</p></div>
+            </div>
+            <div class="staff__box__dosimetrist">
+                <img class="staff__box__dosimetrist__img" src="img/Dubkov_A_D.jpg" alt="Дозиметрист">
+                <div class="staff__box__dosimetrist__title">Дозиметрист<p><span>Дубков</span></br>Александр</br>Дмитриевич</p></div>
+            </div>
+        </div>
+
+        <div class="staff__header">
+            <div class="staff__header__boss__title staff__box__name"><span>Гвоздев</span> Виктор</br>Сергеевич</div>
+            <div class="staff__header__info"></div>
+        </div>
+        
+	</div>
+
+</div>
+
+<footer>
+    <img src="img/logo/Rosatom_Vertical_ru.svg" alt="РОСАТОМ">
+</footer>
+
+</body>
+</html>

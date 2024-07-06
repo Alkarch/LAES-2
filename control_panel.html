@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Дежурная смена ОРБ ЛАЭС-2</title>
+	<link rel="icon" href="img/service/favicon.svg" type="image/svg+xml">
+	<link rel="stylesheet" href="css/main.css">
+    <script src="scripts/header_clock.js"></script>
+</head>
+    <body>
+        
+<header>
+	<div class="container">
+        <div class="header">
+            <div class="header__icon"></div>
+            <div class="header__title">Экран</br>Администратора</div>
+            <div class="header__date"><span id="date"></span></div>
+            <div class="header__time">
+                <span id="clock"></span>
+                <script>digitalClock();</script>
+            </div>
+        </div>
+	</div>
+</header>
+
+<div class="staff">
+	<div class="container">
+
+        <div class="staff__header">
+            <div class="staff__header__info"></div>
+        </div>
+
+        <div class="staff__box">
+            
+            <div class="staff__box__boss">
+                <fieldset>
+                    <div class="dropdown">
+                        <div class="staff__header__boss__title">Начальник смены</div>                        
+                        
+                        <button class="dropbtn">Выбрать</button>
+                        
+                        <div class="dropdown-content">
+                        <a href="#"><input type="radio" id="header__boss__1" name="drone" value="header__boss__1" checked />
+                            <input type="text" value="Гигин Дмитрий Александрович"for="header__boss__1"><!-- comment -->
+                        
+                        </a>
+                        
+                        <a href="#"><input type="radio" id="header__boss__2" name="drone" value="header__boss__2" />
+                             <input type="text" value="Гвозев Виктор Сергеевич" for="header__boss__2"><!-- comment --></a>
+
+                        <a href="#"> <input type="radio" id="header__boss__3" name="drone" value="header__boss__3" />
+                            <input type="text" value="Кузьмин Алексей Васильевич"for="header__boss__3"></a>
+
+  </div>
+
+
+                    </fieldset>
+            </div>
+            <div class="staff__box__engineer">
+                <fieldset>
+                    <div class="dropdown">
+                    <div class="staff__box__engineer__title">Инженер (сменный)</div>
+                <div>
+                    
+                        <button class="dropbtn">Выбрать</button>
+                        
+                        <div class="dropdown-content">
+                        <a href="#"><input type="radio" id="engineer__1" name="drone1" value="engineer__1" checked />
+                       <input type="text" value="Исаев Валерий Вадимович" for="engineer__1"></a>
+                        
+                        <a href="#"><input type="radio" id="engineer__2" name="drone1" value="engineer__2" />
+                      <input type="text" value="Касимов Константин Сергеевич"for="engineer__2"></a>
+
+                        <a href="#"><input type="radio" id="engineer__3" name="drone1" value="engineer__3" />
+                         <input type="text" value="Сухарев Михаил Александрович" for="engineer__3"></a>
+                            </div>
+                           </fieldset>
+            </div>
+            <div class="staff__box__dosimetrist">
+                <fieldset>
+                     <div class="dropdown">
+                    <div class="staff__box__dosimetrist__title">Дозиметрист</div>
+                <div>
+                    
+                        <button class="dropbtn">Выбрать</button>
+                        
+                        <div class="dropdown-content">
+                        <a href="#"><input type="radio" id="dosimetrist__1" name="drone2" value="dosimetrist__1" checked />
+                            <input type="text" value="Дубков Александр Дмитриевич" for="dosimetrist__1"></a>
+                        
+                        <a href="#"><input type="radio" id="dosimetrist__2" name="drone2" value="dosimetrist__2" />
+                      <input type="text" value="Буцкий Анатолий Александрович"for="dosimetrist__2"></a>
+
+                        <a href="#"><input type="radio" id="dosimetrist__3" name="drone2" value="dosimetrist__3" />
+                         <input type="text" value="Калиниченко Николай Игоревич" for="dosimetrist__3"></a>
+                           
+                           </fieldset>
+            </div>
+        <div class="staff__header">
+
+            <div class="staff__header__info"></div>
+        </div>
+        
+	</div>
+
+</div>
+
+<footer>
+    <img src="img/logo/Rosatom_Vertical_ru.svg" alt="РОСАТОМ">
+</footer>
+      
+        
+
+        <button class="js-bin-result" >Сохранить</button>
+    </body>
+</html>

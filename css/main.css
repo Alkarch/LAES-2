@@ -1,0 +1,194 @@
+@font-face { 
+    font-family: "MyriadProRegular";
+    src: url("../font/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../font/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../font/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../font/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face { 
+    font-family: "MyriadProBold";
+    src: url("../font/MyriadProBold/MyriadProBold.eot");
+    src: url("../font/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../font/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../font/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'MyriadProRegular';
+    background-color: #f0f0f0;
+    color: #3b3d3f;
+}
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 120px;
+    display: grid;
+    grid-template-columns: 8% 43% 10% auto;
+    align-items: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #3b3d3f;
+}
+
+.header__icon { 
+    width: 100%;
+    height: 100%;
+    background: url("../img/service/radiation_icon.png") no-repeat 0 center;
+    background-size: 75%;
+}
+
+.header__date {
+    font-size: 90px;
+    color: #3c78b6;
+}
+
+.header__time {
+    font-size: 90px;
+    color: #3c78b6;
+    text-align: right;
+}
+
+.staff__header {
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: 44.5% auto;
+}
+
+.staff__header__boss__title {
+    font-size: 50px;
+    color: #3c78b6;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.staff__box {
+    display: grid;
+    gap: 50px;
+    grid-template-areas:
+    "A A A A   A A B B   B B B B"
+    "A A A A   A A B B   B B B B"
+    "A A A A   A A C C   C C C C"
+    "A A A A   A A C C   C C C C";
+}
+
+.staff__box__engineer__title,
+.staff__box__dosimetrist__title {
+    font-size: 40px;
+    color: #3c78b6;
+    text-transform: uppercase;
+}
+
+.staff__box__boss {
+    grid-area: A;
+}
+
+.staff__box__engineer {
+    grid-area: B;
+}
+
+.staff__box__dosimetrist {
+    grid-area: C;
+}
+
+.staff__box__boss__img {
+    width: 100%;
+    border: 1px solid #3b3d3f;
+}
+
+.staff__box__engineer,
+.staff__box__dosimetrist {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.staff__box__engineer p,
+.staff__box__dosimetrist p {
+    color: #3b3d3f;
+}
+
+.staff__box__engineer__title span,
+.staff__box__dosimetrist__title span  {
+    display: inline__block;
+    margin-top: 15px;
+    font-family: 'MyriadProBold';
+}
+
+.staff__box__name {
+    color: #3b3d3f;
+}
+
+.staff__box__name span {
+    font-family: 'MyriadProBold';
+}
+
+.staff__box__engineer__img,
+.staff__box__dosimetrist__img {
+    width: 100%;
+    border: 1px solid #3b3d3f;
+}
+
+footer img {
+    position: absolute;
+    right: 70px;
+    bottom: 50px;
+    width: 100px;
+    opacity: 30%;
+}
+/* Кнопка выпадающего списка */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
